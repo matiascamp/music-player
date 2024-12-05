@@ -1,0 +1,123 @@
+* {
+  font-family: "Outfit";
+}
+
+body {
+  background: url("/bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.player-container {
+  width: 450px;
+  height: 650px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #272135;
+  border-radius: 32px;
+  padding: 32px 0;
+  flex-direction: column;
+}
+
+.time-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+#song-title .text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#band-name .text {
+  font-size: 12px;
+  margin-top: 0;
+  color: #4D5562;
+}
+
+#song-title,
+#band-name {
+  text-align: center;
+}
+
+#song-cover {
+  max-width: 400px;
+  height: 410px;
+  border-radius: 32px;
+}
+
+.text {
+  color: white;
+}
+
+#current-time,
+#duration-time {
+  color: white;
+  font-size: 10px;
+  padding-bottom: 5px;
+  color: #4D5562;
+}
+
+.progressBar-container,
+#player-progress-bar {
+  width: 100%;
+}
+
+.progressBar-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#player-progress-bar {
+  width: auto;
+  margin: 0 30px;
+  background: transparent;
+}
+
+.player-footer {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+#play-and-stop {
+  background-color: #C93B76;
+  border-radius: 100%;
+  border: none;
+  height: 60px;
+  width: 60px;
+}
+
+#back,
+#next {
+  background: transparent;
+  border: none;
+}
+
+#player-progress-bar::-moz-range-progress {
+  background-color: #C93B76;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 5px;
+}
+
+#player-progress-bar::-moz-range-track {
+  height: 5px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #ddd;
+}
+
+
+#player-progress-bar::-moz-range-thumb {
+  background-color: transparent;
+  border: none;
+}
