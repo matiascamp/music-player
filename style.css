@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url("/bg.jpg");
+  background: url("bg.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,10 +92,17 @@ body {
   width: 60px;
 }
 
+#play-and-stop:hover {
+  background-color: #f24f93;
+  transition: 1ms;
+  cursor: pointer;
+}
+
 #back,
 #next {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 #player-progress-bar::-moz-range-progress {
