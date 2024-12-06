@@ -1,5 +1,3 @@
-import './style.css'
-
 const playlist = [{
   name: '/forest-lullaby-110624.mp3',
   band: "Lesfm",
