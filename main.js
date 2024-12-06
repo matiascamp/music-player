@@ -39,7 +39,7 @@ const setSongName = () => {
   const fileName = playlist[currentTrackIndex].name
   const fileBand = playlist[currentTrackIndex].band
 
-  const nameParts = fileName.split('.')[0].split("/")[1].split('-')
+  const nameParts = fileName.split('.')[0].split('-')
 
   nameParts.pop();
 
