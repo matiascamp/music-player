@@ -100,7 +100,7 @@ const toggleAudio = async (audioFile) => {
     pauseTime = pauseTime + (audioContext.currentTime - startTime)
     audioSource.stop()
     isPlaying = false
-    (pauseTime > 0) ? toggleButton.innerHTML = '<img src="Play_fill.svg" alt="Play">' : toggleButton.innerHTML = '<img src="stop.svg" alt="Stop">'
+    toggleButton.innerHTML =  (pauseTime > 0) ?  '<img src="Play_fill.svg" alt="Play">' : toggleButton.innerHTML = '<img src="stop.svg" alt="Stop">'
 
     if (animationFrameId) {
       cancelAnimationFrame(animationFrameId)
