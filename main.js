@@ -1,12 +1,12 @@
 const playlist = [{
-  name: '/forest-lullaby-110624.mp3',
+  name: 'forest-lullaby-110624.mp3',
   band: "Lesfm",
-  cover: '/cover-2.png'
+  cover: 'cover-2.png'
 },
 {
-  name: '/lost-in-city-lights-145038.mp3',
+  name: 'lost-in-city-lights-145038.mp3',
   band: 'Cosmo Sheldrake',
-  cover: '/cover-1.png'
+  cover: 'cover-1.png'
 }];
 
 const audioContext = new AudioContext()
@@ -93,14 +93,14 @@ const toggleAudio = async (audioFile) => {
     audioSource.start(0, pauseTime)
     isPlaying = true
 
-    toggleButton.innerHTML = '<img src="./pause-40.svg" alt="Pause">'
+    toggleButton.innerHTML = '<img src="pause-40.svg" alt="Pause">'
     updateProgressBar()
 
   } else {
     pauseTime = pauseTime + (audioContext.currentTime - startTime)
     audioSource.stop()
     isPlaying = false
-    (pauseTime > 0) ? toggleButton.innerHTML = '<img src="./Play_fill.svg" alt="Play">' : toggleButton.innerHTML = '<img src="./stop.svg" alt="Stop">'
+    (pauseTime > 0) ? toggleButton.innerHTML = '<img src="Play_fill.svg" alt="Play">' : toggleButton.innerHTML = '<img src="stop.svg" alt="Stop">'
 
     if (animationFrameId) {
       cancelAnimationFrame(animationFrameId)
@@ -142,9 +142,9 @@ const backButton = document.getElementById('back')
 const nextButton = document.getElementById('next')
 const initialTime = document.getElementById('current-time')
 
-toggleButton.innerHTML = '<img src="/Play_fill.svg" alt="Play">'
-backButton.innerHTML = '<img src="/Stop_and_play_fill-1.svg" alt="back">'
-nextButton.innerHTML = '<img src="./Stop_and_play_fill.svg" alt="next">'
+toggleButton.innerHTML = '<img src="Play_fill.svg" alt="Play">'
+backButton.innerHTML = '<img src="Stop_and_play_fill-1.svg" alt="back">'
+nextButton.innerHTML = '<img src="Stop_and_play_fill.svg" alt="next">'
 
 initialTime.innerHTML = currentTime.toFixed(2)
 
